@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./task-manager-be
+    container_name: task-manager-backend
+    env_file:
+      - ./task-manager-be/.env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: ./task-manager-fe
+    container_name: task-manager-frontend
+    ports:
+      - "8080:80"
+    env_file:
+      - ./task-manager-fe/.env
