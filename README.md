@@ -48,7 +48,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/task-manager.git
+   git clone https://github.com/aayush305/BrokerLift.git
    cd task-manager
    ```
 
