@@ -1,7 +1,7 @@
 <template>
   <div class="login-container">
     <h2>When do you want it?</h2>
-    <input v-model="answer" placeholder="Answer" />
+    <input v-model="answer" placeholder="Answer" autofocus />
     <button @click="login">Let's Go</button>
     <p v-if="errorMessage">{{ errorMessage }}</p>
   </div>

@@ -6,6 +6,7 @@
         @keyup.enter="addTask($event)"
         placeholder="Add a new task"
         class="task-textarea"
+        autofocus
       ></textarea>
       <div v-if="inputError" class="error-message">{{ inputError }}</div>
     </div>
@@ -17,7 +18,7 @@
         v-else-if="tasks.length === 0 && Object.keys(pendingTasks).length === 0"
         class="no-tasks-message"
       >
-        No tasks available. Start by adding a new task above.
+        No tasks available. Start by adding a new task.
       </div>
       <ul v-else>
         <li

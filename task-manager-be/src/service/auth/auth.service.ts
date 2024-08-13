@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { Injectable,NotAcceptableException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
@@ -9,7 +9,7 @@ export class AuthService {
 
   async authenticate(answer: string): Promise<{ accessToken: string }> {
     if (answer !== this.correctAnswer) {
-      throw new UnauthorizedException('Incorrect answer');
+      throw new NotAcceptableException('Incorrect answer');
     }
 
     const payload = { answer };
