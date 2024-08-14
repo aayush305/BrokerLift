@@ -49,7 +49,7 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/aayush305/BrokerLift.git
-   cd task-manager
+   cd BrokerLift
    ```
 
 2. **Set up environment variables:**
