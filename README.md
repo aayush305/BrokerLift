@@ -64,7 +64,7 @@ Before you begin, ensure you have met the following requirements:
    Create a .env file in task-manager-fe directory with the following content:
 
     ```bash
-    VUE_APP_API_URL=http://localhost:3000
+    VITE_API_BASE_URL=http://localhost:3000/
      ```
 
 ### Using Docker
